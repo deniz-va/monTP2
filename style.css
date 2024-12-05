@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-}
+} /*Afin de mettre à 0 les marges et le padding de défaut du browser*/
 
 
 body{
@@ -34,7 +34,7 @@ body{
 }
 
 #voca{
-             -webkit-text-stroke: 3px rgb(0, 0, 0);
+             -webkit-text-stroke: 3px rgb(0, 0, 0); /*Ajouter un contour au titre principal de la page*/
     color: rgb(255, 100, 155);
     font-size: 10rem;
 }
@@ -55,7 +55,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    position: sticky;
+    position: sticky; /*Cette valeur de position permet de varier entre une position relative et fixe dépendemment d'où on se trouve sur la page. Si on scroll plus bas que la position, le menu se fixe sur le haut*/
     top: 0;
     z-index: 2;
 }
@@ -70,11 +70,11 @@ nav a{
 }
 
 nav a:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /*Ajouter un effet lorsque le curseur est par-dessus les liens du menu*/
 }
 
 nav a{
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; /*La durée et le forme de la transition*/
 }
 
 nav a:link {
@@ -139,7 +139,7 @@ table, tr, td {
     border-collapse: collapse;
 }
 
-tr:nth-child(even){
+tr:nth-child(even){/*Toutes les rangées paires ont une couleur de fond*/
     background-color: rgb(233, 244, 244);
 }
 
@@ -159,6 +159,8 @@ td:hover .album{
     display: block;
     margin: auto;
 }
+
+/*Les albums n'apparaissent que lorsque le curseur passe sur la case de sa chanson*/
 
 .titreChanson{
     font-style: italic;
@@ -203,7 +205,7 @@ h2{
     transition-property: all;
     transition-timing-function: ease;
     transition-duration: 1s;
-    } 
+    } /*Les trois derniers paramètres ont la même fonction que transition, seulement séparés. C'est comme flex-direction et flex-wrap qui deviennent flex-flow*/
 
 
 #video {
@@ -257,13 +259,13 @@ input{
     flex-flow: column nowrap;
     align-items: flex-end;
     position: sticky;
-    bottom: -5px;
+    bottom: -5px; /*Permet d'aligner Hachune avec le bas de l'écran, car ses cheveux sont plus longs que ses jambes*/
     margin-left: 86%;
-    z-index: 2;
+    z-index: 3;
 }
 
 #migu:hover #surprise{
-    display: block;
+    display: block; /*Comme avec les albums, le texte apparaît en passant le curseur sur Hachune Miku*/
 }
 
 #articles p{
@@ -283,7 +285,7 @@ footer{
     color: white;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: -5px;
+    margin-top: -5px; 
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -322,7 +324,7 @@ footer p{
 }
 
 ion-icon{
-    font-size: 40px;
+    font-size: 40px; /*Les icons sont modifiés avec le font-size plutôt que width*/
 }
 
 #articles h3{
@@ -345,7 +347,7 @@ figcaption{
     width: 100%;
     background-color: rgb(233, 244, 244);
     padding: 10px 0 50px 0;
-    margin-bottom: -180px;
+    margin-bottom: -180px; /*Sans cette marge, il y aurait un grand espace entre le formulaire et le footer à cause de Hachune Miku*/
 }
 
 #teto{
@@ -356,7 +358,7 @@ figcaption{
 }
 
 #teto figcaption{
-    transform: rotate(-90deg);
+    transform: rotate(-90deg); /*Permet de mettre le texte à la verticale*/
     position: relative;
     top: 120px;
     left: -48px;
@@ -369,7 +371,7 @@ figcaption{
 }
 
 #teto p{
-    width: 85%;
+    width: 85%; /*Afin d'accomoder le paragraphe à l'image, j'ai dû modifier la largeur du paragraphe*/
 }
 
 #neru{
